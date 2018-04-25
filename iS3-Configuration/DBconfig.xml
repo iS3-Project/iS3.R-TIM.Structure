@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<setting>
+  <ipaddress>127.0.0.1</ipaddress>
+  <user>sa</user>
+  <password>123456</password>
+  <database>iS3Project</database>
+</setting>

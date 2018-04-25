@@ -1,0 +1,626 @@
+<Project>
+  <is3:ProjectDefinition xmlns="http://schemas.microsoft.com/client/2007"
+                        xmlns:is3="clr-namespace:iS3.Core;assembly=iS3.Core"
+                        xmlns:g="clr-namespace:iS3.Core.Graphics;assembly=iS3.Core"
+                        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+                        GeometryServiceUrl="http://sampleserver3.arcgisonline.com/ArcGIS/rest/services/Geometry/GeometryServer"
+                        ID="iS3Demo"
+                        ProjectTitle="岩石隧道工程结构信息交付标准"
+                        DatabaseName1="iS3Demo"
+                        DefaultMapID="BaseMap">
+  </is3:ProjectDefinition>
+  <Domain Name="RTIM_Structure" Type="RTIM_Structure">
+    <ObjsDefinition>
+      <Secondlining HasGeometry="true" Name="AllSecondlinings" GISLayerName="GeoSecondlining"
+                TableNameSQL="Secondlining" OrderSQL="[Name]"/>
+    </ObjsDefinition>
+    <TreeDefinition>
+      <RTIM_Structure  DisplayName="RTIM_Structure" Desc="See NATMstructure report for complete information.">
+        <FirstLevel DisplayName="主洞">
+          <SecondLevel DisplayName="主洞洞门">
+            <ThirdLevel DisplayName="洞门墙">
+              <FourthLevel DisplayName="钢筋">
+                
+              </FourthLevel>
+              <FourthLevel DisplayName="洞门墙">
+
+              </FourthLevel>
+            </ThirdLevel>
+            <ThirdLevel DisplayName="挡墙">
+              <FourthLevel DisplayName="挡墙">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="钢筋">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="泄水孔">
+
+              </FourthLevel>
+            </ThirdLevel>
+          </SecondLevel>
+          <SecondLevel DisplayName="主洞明洞">
+            <ThirdLevel DisplayName="衬砌">
+              <FourthLevel DisplayName="钢筋">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="衬砌混凝土">
+
+              </FourthLevel>
+            </ThirdLevel>
+            <ThirdLevel DisplayName="防排水">
+              <FourthLevel DisplayName="防水层">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="排水管">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="污水沟">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="清水沟">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="沟邦">
+
+              </FourthLevel>
+            </ThirdLevel>
+            <ThirdLevel DisplayName="洞内附属设施">
+              <FourthLevel DisplayName="盖板钢筋">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="电缆沟盖板">
+
+              </FourthLevel>
+            </ThirdLevel>
+            <ThirdLevel DisplayName="路基路面">
+              <FourthLevel DisplayName="面层钢筋">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="路面面层">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="仰拱回填">
+
+              </FourthLevel>
+            </ThirdLevel>
+          </SecondLevel>
+          <SecondLevel DisplayName="主洞暗洞">
+            <ThirdLevel DisplayName="套拱">
+              <FourthLevel DisplayName="工字钢架">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="导向钢管">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="拱身混凝土">
+
+              </FourthLevel>
+            </ThirdLevel>
+            <ThirdLevel DisplayName="超前支护">
+              <FourthLevel DisplayName="锚杆">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="超前小导管">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="超前管棚">
+
+              </FourthLevel>
+            </ThirdLevel>
+            <ThirdLevel DisplayName="初期支护">
+              <FourthLevel DisplayName="初喷混凝土">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="锚杆">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="钢筋网">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="工字钢架">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="格栅钢架">
+
+              </FourthLevel>
+            </ThirdLevel>
+            <Secondlining DisplayName="二次衬砌" RefDomainName="RTIM_Structure" RefObjsName="AllSecondlinings">
+              <FourthLevel DisplayName="拱圈二衬">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="仰拱衬砌">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="钢筋">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="混凝土">
+
+              </FourthLevel>
+            </Secondlining>
+            <ThirdLevel DisplayName="防排水">
+              <FourthLevel DisplayName="防水层">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="排水管">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="污水沟">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="清水沟">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="沟邦">
+
+              </FourthLevel>
+            </ThirdLevel>
+            <ThirdLevel DisplayName="路基路面">
+              <FourthLevel DisplayName="仰拱回填">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="路面面层">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="面层钢筋">
+
+              </FourthLevel>
+            </ThirdLevel>
+          </SecondLevel>
+        </FirstLevel>
+        <FirstLevel DisplayName="横通道">
+          <SecondLevel DisplayName="人行横通道">
+            <ThirdLevel DisplayName="初期支护">
+              <FourthLevel DisplayName="初喷混凝土">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="锚杆">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="钢筋网">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="工字钢架">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="格栅钢架">
+
+              </FourthLevel>
+            </ThirdLevel>
+            <ThirdLevel DisplayName="二次衬砌" RefDomainName="RTIM_Structure" RefObjsName="AllSecondlinings">
+              <FourthLevel DisplayName="拱圈衬砌">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="边墙衬砌">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="钢筋">
+
+              </FourthLevel>
+            </ThirdLevel>
+            <ThirdLevel DisplayName="底廊回填">
+              <FourthLevel DisplayName="底廊铺底">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="底廊填充">
+
+              </FourthLevel>
+            </ThirdLevel>
+            <ThirdLevel DisplayName="防排水">
+              <FourthLevel DisplayName="防水层">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="排水管">
+
+              </FourthLevel>
+            </ThirdLevel>
+            <ThirdLevel DisplayName="路基路面">
+              <FourthLevel DisplayName="混凝土">
+
+              </FourthLevel>
+            </ThirdLevel>
+          </SecondLevel>
+          <SecondLevel DisplayName="车行横通道">
+            <ThirdLevel DisplayName="同人行横通道">
+              <FourthLevel DisplayName="初喷混凝土">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="锚杆">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="钢筋网">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="工字钢架">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="格栅钢架">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="拱圈衬砌">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="边墙衬砌">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="钢筋">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="底廊铺底">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="底廊填充">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="防水层">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="排水管">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="混凝土">
+
+              </FourthLevel>
+            </ThirdLevel>
+          </SecondLevel>
+        </FirstLevel>
+        <FirstLevel DisplayName="斜井">
+          <SecondLevel DisplayName="斜井洞门">
+            <ThirdLevel DisplayName="洞门墙">
+              <FourthLevel DisplayName="洞门墙">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="钢筋">
+
+              </FourthLevel>
+            </ThirdLevel>
+            <ThirdLevel DisplayName="挡墙">
+              <FourthLevel DisplayName="挡墙混凝土">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="钢筋">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="泄水孔">
+
+              </FourthLevel>
+            </ThirdLevel>
+          </SecondLevel>
+          <SecondLevel DisplayName="斜井明洞">
+            <ThirdLevel DisplayName="衬砌">
+              <FourthLevel DisplayName="衬砌混凝土">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="钢筋">
+
+              </FourthLevel>
+            </ThirdLevel>
+            <ThirdLevel DisplayName="防排水">
+              <FourthLevel DisplayName="防水层">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="排水管">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="污水沟">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="清水沟">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="沟邦">
+
+              </FourthLevel>
+            </ThirdLevel>
+            <ThirdLevel DisplayName="洞内附属设施">
+              <FourthLevel DisplayName="电缆沟盖板">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="盖板钢筋">
+
+              </FourthLevel>
+            </ThirdLevel>
+            <ThirdLevel DisplayName="路基路面">
+              <FourthLevel DisplayName="仰拱回填">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="路面面层">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="面层钢筋">
+
+              </FourthLevel>
+            </ThirdLevel>
+          </SecondLevel>
+          <SecondLevel DisplayName="斜井暗洞">
+            <ThirdLevel DisplayName="套拱">
+              <FourthLevel DisplayName="拱身混凝土">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="导向钢管">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="工字钢架">
+
+              </FourthLevel>
+            </ThirdLevel>
+            <ThirdLevel DisplayName="超前支护">
+              <FourthLevel DisplayName="超前管棚">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="超前小导管">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="锚杆">
+
+              </FourthLevel>
+            </ThirdLevel>
+            <ThirdLevel DisplayName="初期支护">
+              <FourthLevel DisplayName="初喷混凝土">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="锚杆">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="钢筋网">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="工字钢架">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="格栅钢架">
+
+              </FourthLevel>
+            </ThirdLevel>
+            <ThirdLevel DisplayName="二次衬砌">
+              <FourthLevel DisplayName="拱圈二衬">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="仰拱衬砌">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="钢筋">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="混凝土">
+
+              </FourthLevel>
+            </ThirdLevel>
+            <ThirdLevel DisplayName="防排水">
+              <FourthLevel DisplayName="防水层">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="排水管">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="污水沟">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="清水沟">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="沟邦">
+
+              </FourthLevel>
+            </ThirdLevel>
+            <ThirdLevel DisplayName="路基路面">
+              <FourthLevel DisplayName="仰拱回填">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="路面面层">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="面层钢筋">
+
+              </FourthLevel>
+            </ThirdLevel>
+          </SecondLevel>
+        </FirstLevel>
+        <FirstLevel DisplayName="竖井">
+          <SecondLevel DisplayName="竖井锁口圈">
+            <ThirdLevel DisplayName="衬砌结构">
+              <FourthLevel DisplayName="衬砌混凝土">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="钢筋">
+
+              </FourthLevel>
+            </ThirdLevel>
+          </SecondLevel>
+          <SecondLevel DisplayName="竖井井身">
+            <ThirdLevel DisplayName="初期支护">
+              <FourthLevel DisplayName="初喷混凝土">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="锚杆">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="钢筋网">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="工字钢架">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="格栅钢架">
+
+              </FourthLevel>
+            </ThirdLevel>
+            <ThirdLevel DisplayName="二次衬砌">
+              <FourthLevel DisplayName="衬砌混凝土">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="钢筋">
+
+              </FourthLevel>
+            </ThirdLevel>
+          </SecondLevel>
+        </FirstLevel>
+        <FirstLevel DisplayName="平行导坑">
+          <SecondLevel DisplayName="平行导坑洞门">
+            <ThirdLevel DisplayName="洞门墙">
+              <FourthLevel DisplayName="洞门墙">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="钢筋">
+
+              </FourthLevel>
+            </ThirdLevel>
+            <ThirdLevel DisplayName="挡墙">
+              <FourthLevel DisplayName="挡墙混凝土">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="钢筋">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="泄水孔">
+
+              </FourthLevel>
+            </ThirdLevel>
+          </SecondLevel>
+          <SecondLevel DisplayName="平行导坑明洞">
+            <ThirdLevel DisplayName="衬砌">
+              <FourthLevel DisplayName="衬砌混凝土">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="钢筋">
+
+              </FourthLevel>
+            </ThirdLevel>
+            <ThirdLevel DisplayName="防排水">
+              <FourthLevel DisplayName="防水层">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="排水管">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="污水沟">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="清水沟">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="沟邦">
+
+              </FourthLevel>
+            </ThirdLevel>
+            <ThirdLevel DisplayName="洞内附属设施">
+              <FourthLevel DisplayName="电缆沟盖板">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="盖板钢筋">
+
+              </FourthLevel>
+            </ThirdLevel>
+            <ThirdLevel DisplayName="路基路面">
+              <FourthLevel DisplayName="仰拱回填">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="路面面层">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="面层钢筋">
+
+              </FourthLevel>
+            </ThirdLevel>
+          </SecondLevel>
+          <SecondLevel DisplayName="平行导坑暗洞">
+            <ThirdLevel DisplayName="套拱">
+              <FourthLevel DisplayName="拱身混凝土">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="导向钢管">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="工字钢架">
+
+              </FourthLevel>
+            </ThirdLevel>
+            <ThirdLevel DisplayName="超前支护">
+              <FourthLevel DisplayName="超前管棚">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="超前小导管">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="锚杆">
+
+              </FourthLevel>
+            </ThirdLevel>
+            <ThirdLevel DisplayName="初期支护">
+              <FourthLevel DisplayName="初喷混凝土">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="锚杆">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="钢筋网">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="工字钢架">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="格栅钢架">
+
+              </FourthLevel>
+            </ThirdLevel>
+            <ThirdLevel DisplayName="二次衬砌">
+              <FourthLevel DisplayName="拱圈二衬">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="仰拱衬砌">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="钢筋">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="混凝土">
+
+              </FourthLevel>
+            </ThirdLevel>
+            <ThirdLevel DisplayName="防排水">
+              <FourthLevel DisplayName="防水层">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="排水管">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="污水沟">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="清水沟">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="沟邦">
+
+              </FourthLevel>
+            </ThirdLevel>
+            <ThirdLevel DisplayName="路基路面">
+              <FourthLevel DisplayName="仰拱回填">
+
+              </FourthLevel>
+              <FourthLevel DisplayName="路面面层"/>
+
+              <FourthLevel DisplayName="面层钢筋">
+
+              </FourthLevel>
+            </ThirdLevel>
+          </SecondLevel>
+        </FirstLevel>
+        <FirstLevel DisplayName="机电">
+          <SecondLevel DisplayName="风机房">
+            <ThirdLevel DisplayName="主体结构">
+
+            </ThirdLevel>
+            <ThirdLevel DisplayName="防排水">
+
+            </ThirdLevel>
+          </SecondLevel>
+        </FirstLevel>
+      </RTIM_Structure>
+    </TreeDefinition>
+  </Domain>
+</Project>
+
+
+
+
